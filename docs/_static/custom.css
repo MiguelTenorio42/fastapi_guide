@@ -1,0 +1,255 @@
+/* Custom CSS for FastAPI Guide */
+
+/* Improve code block styling */
+.highlight {
+    border-radius: 8px;
+    margin: 1em 0;
+}
+
+/* Better spacing for admonitions */
+.admonition {
+    margin: 1.5em 0;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.admonition-title {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* Fix for MyST admonitions */
+div.admonition {
+    border-left: 4px solid #007acc;
+    background-color: #f8f9fa;
+}
+
+div.admonition.tip {
+    border-left-color: #28a745;
+}
+
+div.admonition.warning {
+    border-left-color: #ffc107;
+}
+
+div.admonition.danger {
+    border-left-color: #dc3545;
+}
+
+div.admonition.note {
+    border-left-color: #17a2b8;
+}
+
+div.admonition.success {
+    border-left-color: #28a745;
+    background-color: #d4edda;
+}
+
+/* Improve table styling */
+table.docutils {
+    border-collapse: collapse;
+    margin: 1em 0;
+}
+
+table.docutils th,
+table.docutils td {
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+}
+
+table.docutils th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+
+/* Better navigation styling */
+.wy-nav-content {
+    max-width: 1200px;
+}
+
+/* Improve emoji rendering */
+.emoji {
+    font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Android Emoji", sans-serif;
+}
+
+/* Custom styling for checklist items */
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item input[type="checkbox"] {
+    margin-right: 0.5em;
+}
+
+/* Fix toctree styling */
+.toctree-wrapper {
+    margin: 1em 0;
+}
+
+.toctree-wrapper ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.toctree-wrapper li {
+    margin: 0.5em 0;
+    padding-left: 1em;
+}
+
+/* Grid cards styling */
+.sd-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid #e1e4e8;
+    border-radius: 12px;
+    overflow: hidden;
+    height: 100%;
+}
+
+.sd-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+/* Card headers with colors */
+.sd-card-header.bg-primary {
+    background: linear-gradient(135deg, #007bff, #0056b3) !important;
+    color: white !important;
+    padding: 1rem;
+    font-weight: 600;
+}
+
+.sd-card-header.bg-success {
+    background: linear-gradient(135deg, #28a745, #1e7e34) !important;
+    color: white !important;
+    padding: 1rem;
+    font-weight: 600;
+}
+
+.sd-card-header.bg-info {
+    background: linear-gradient(135deg, #17a2b8, #117a8b) !important;
+    color: white !important;
+    padding: 1rem;
+    font-weight: 600;
+}
+
+.sd-card-header.bg-warning {
+    background: linear-gradient(135deg, #ffc107, #e0a800) !important;
+    color: white !important;
+    padding: 1rem;
+    font-weight: 600;
+}
+
+.sd-card-header.bg-danger {
+    background: linear-gradient(135deg, #dc3545, #bd2130) !important;
+    color: white !important;
+    padding: 1rem;
+    font-weight: 600;
+}
+
+.sd-card-header.bg-secondary {
+    background: linear-gradient(135deg, #6c757d, #545b62) !important;
+    color: white !important;
+    padding: 1rem;
+    font-weight: 600;
+}
+
+/* Card body styling */
+.sd-card-body {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+/* Card links */
+.sd-card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.sd-card a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Grid responsive improvements */
+.sd-container-fluid .sd-row {
+    margin: 0 -0.75rem;
+}
+
+.sd-container-fluid .sd-col {
+    padding: 0 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Navigation cards special styling */
+.navigation-card {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.navigation-card:hover {
+    border-color: #007bff;
+    background: linear-gradient(135deg, #ffffff, #f8f9fa);
+}
+
+/* Substeps links styling */
+.substeps-links {
+    margin-top: 0.5rem;
+    font-size: 0.9em;
+    color: #6c757d;
+}
+
+.substeps-links a {
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 0.25rem;
+}
+
+.substeps-links a:hover {
+    text-decoration: underline;
+}
+
+.sd-card-title {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+/* Better spacing for sections */
+.section {
+    margin-bottom: 2em;
+}
+
+/* Better spacing for sections */
+.section {
+    margin-bottom: 2em;
+}
+
+/* Improve link styling */
+a.reference.external::after {
+    content: " 🔗";
+    font-size: 0.8em;
+    opacity: 0.7;
+}
+
+/* Custom styling for code inline */
+code.literal {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    padding: 2px 4px;
+    font-size: 0.9em;
+}
+
+/* Improve blockquote styling */
+blockquote {
+    border-left: 4px solid #2980b9;
+    padding-left: 1em;
+    margin-left: 0;
+    font-style: italic;
+    background-color: #f8f9fa;
+    padding: 1em;
+    border-radius: 0 8px 8px 0;
+}
